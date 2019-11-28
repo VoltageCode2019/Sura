@@ -1,0 +1,26 @@
+body
+  #wrap
+    #footer-top
+      padding-bottom: 7% !important
+      padding-top: 7% !important
+      #menu-footer-top
+        #form-email-subscribe
+          input[type="email"]
+            padding: 10px
+          .input-group-append
+            button#button-subscribe
+              padding: 0 10px
+        .form__group
+          .form__group--control
+            input
+              padding: 5px
+              background: none
+              border: 1px solid rgba($pewter-blue, .5)
+              &::placeholder
+                color: $pewter-blue
+            textarea
+              @extend input
+              min-width: 100%
+              max-width: 100%
+              min-height: 100px
+              max-height: 100px

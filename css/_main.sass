@@ -1,0 +1,139 @@
+@import _colors.sass
+@import _globals.sass
+
+//Header - Banner
+body
+  #wrap
+    main#main
+      #header-banner
+        .col-6
+          &:nth-child(2)
+            height: 50%
+            .img__banners
+              position: relative
+              height: 100%
+              img
+                position: absolute
+                left: 0
+                bottom: 0
+                height: 50%
+                & ~ img
+                  position: absolute
+                  left: 20%
+                  bottom: 0
+                  height: 75%
+              .img__banners--price
+                position: absolute
+                left: 35%
+                bottom: 45%
+                width: 250px
+                height: 250px
+                border-radius: 50%
+                background: $white
+                display: flex
+                justify-content: center
+                align-items: center
+                .img__banners--price-center
+                  width: 65%
+                  p
+                    color: $black
+                    font-size: 1.5rem
+                    line-height: .5rem
+                    &:nth-child(1)
+                      text-align: left
+                      font-size: 1rem
+                      line-height: 2rem
+                    &:nth-child(2)
+                      text-align: center
+                      font-size: 3.5rem
+                      font-weight: bold
+                      letter-spacing: 2px
+                      line-height: 1rem
+                    &:nth-child(3)
+                      text-align: right
+                      font-size: 2rem
+                      line-height: 2rem
+      #search-services
+        padding-bottom: 10%  !important 
+        #search-bar
+          margin: -10% 0
+          width: 100%
+          // min-height: 200px
+          background: $white !important
+          display: flex
+          justify-content: center
+          align-items: center
+          .list
+            .list__group
+              .list__group--item-inline
+                font-size: .7rem
+                font-weight: bold
+        #web-services
+          margin: 20% 0 0 0
+          .charachter
+            .charachter-h
+              min-height: 90vh
+              &:nth-child(1)
+                padding-top: 35%
+              .list
+                padding-top: 25%
+      #secure-bases
+        padding-bottom: 10% !important
+        #secure-net
+          margin-top: 10%
+        #bases-net
+          margin-top: 10%
+      #plan-select
+        padding-bottom: 10% !important
+        #plan-select_title
+          margin-top: 10% 
+        #plan-select_option
+          margin-top: 5%
+          .pso
+            background-image: url('../media/img/Ellipse.png') !important
+            background-size: cover !important
+            background-repeat: no-repeat !important
+            .pso__price
+              .pso__price--desc
+                padding-top: 10%
+          .img__group
+            width: 100px
+            height: 100px
+            background-image: url('../media/img/sc-3-1-1.png')
+            background-position: center
+            background-size: cover
+            position: relative
+            .img__group--item
+              position: absolute
+              top: 50%
+              left: 50%
+              transform: translate(-50%, -50%)
+      #people-say
+        padding-bottom: 7% !important
+        padding-top: 7% !important
+        #carousel-say_about
+          transition: ease .5s
+          margin: auto
+          .row
+            .col-md-6
+              padding: 0 !important
+              .card__c
+                width: 100%
+                height: 250px
+                .card__content
+                  display: flex
+                  justify-content: center
+                  align-items: center
+                  height: 100%
+                  width: 100%
+                  .card__content--img
+                    width: 100px
+                    height: 100px
+                    border-radius: 50px
+                    overflow: hidden
+                  .card__content--text
+                    padding: 10%
+                  &:nth-child(1)
+                    background: $primary-color
+                  &:nth-child(2)
+                    background: $white
